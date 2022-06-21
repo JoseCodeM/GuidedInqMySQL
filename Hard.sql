@@ -32,3 +32,7 @@ UPDATE Hard SET FullName = CONCAT(FirstName, ' ', LastName)
 SELECT * FROM guidedInquiry.hard
 ORDER BY `FullName` ASC;
 
+DELETE FROM guidedInquiry WHERE LastName BETWEEN '%r' AND '%z%';
+
+SELECT * FROM guidedInquiry LIMIT 3;
+
